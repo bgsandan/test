@@ -1,0 +1,17 @@
+variables:
+  TEST: "HELLO WORLD"
+
+stages:
+  - test
+  - build
+    
+test:
+  stage: test
+  script:
+    - echo "Am I malicious"
+
+build:
+  stage: build
+  script:
+    - sleep 60
+    - echo "Possible security issue?"
